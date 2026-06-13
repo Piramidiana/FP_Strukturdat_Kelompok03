@@ -8,15 +8,15 @@ public class Course {
     private int sks;
     private int semester;
     private String major;
-    private String desc;
+    private String description;
 
-    public Course(String code, String name, int sks, int semester, String major, String desc) {
+    public Course(String code, String name, int sks, int semester, String major, String description) {
         this.code = code;
         this.name = name;
         this.sks = sks;
         this.semester = semester;
         this.major = major;
-        this.desc = desc;
+        this.description = description;
     }
 
     public String getCode() {
@@ -39,8 +39,8 @@ public class Course {
         return major;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getdescription() {
+        return description;
     }
 
     public void setName(String name) {
@@ -59,8 +59,8 @@ public class Course {
         this.major = major;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setdescription(String description) {
+        this.description = description;
     }
     
     @Override
