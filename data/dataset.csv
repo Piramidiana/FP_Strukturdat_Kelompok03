@@ -1,0 +1,7 @@
+kode,nama,sks,semester,prasyarat
+IF101,Logika Informatika,3,1,None
+IF102,Algoritma Pemrograman,3,1,None
+IF103,Struktur Data,3,2,IF102
+IF104,Basis Data,3,3,IF103
+IF105,Pemrograman Berorientasi Objek,3,2,IF102
+IF106,Jaringan Komputer,3,4,IF103
