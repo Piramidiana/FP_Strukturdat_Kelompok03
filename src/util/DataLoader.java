@@ -1,3 +1,5 @@
+package util; // Sesuaikan dengan lokasi foldermu
+
 import model.Course;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,13 +13,21 @@ public class DataLoader {
         String line;
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            // Melewati baris pertama (header: kode,nama,sks,semester,prasyarat)
-            br.readLine(); 
+            br.readLine(); // Skip header
             
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
-                // Memasukkan data ke dalam objek Course
-                Course course = new Course(values[0], values[1], Integer.parseInt(values[2]), values[4]);
+                // Pastikan urutan CSV sesuai dengan parameter ini:
+                // values[0]=kode, values[1]=nama, values[2]=sks, values[3]=semester, values[4]=major, values[5]=deskripsi
+                
+                Course course = new Course(
+                    values[0].trim(), 
+                    values[1].trim(), 
+                    Integer.parseInt(values[2].trim()), 
+                    Integer.parseInt(values[3].trim()), 
+                    values[4].trim(), 
+                    values[5].trim()
+                );
                 courses.add(course);
             }
         } catch (IOException e) {
