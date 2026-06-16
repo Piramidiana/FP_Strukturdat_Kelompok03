@@ -1,0 +1,26 @@
+kode,nama,sks,semester,jurusan,deskripsi
+ET234103,Algoritma dan Teknik Pemrograman,4,1,Teknologi Informasi,Mempelajari dasar logika algoritma dan teknik pemrograman terstruktur
+ET234102,Arsitektur dan Organisasi Komputer,3,1,Teknologi Informasi,Mempelajari organisasi dan arsitektur sistem komputer
+SF234204,Fisika Dasar,3,1,Teknologi Informasi,Mempelajari konsep dasar fisika yang relevan dengan komputasi
+ET234104,Hukum dan Etika Teknologi Informasi,2,1,Teknologi Informasi,Mempelajari aspek hukum dan etika dalam dunia teknologi informasi
+SM234101,Kalkulus 1,3,1,Teknologi Informasi,Mempelajari konsep limit turunan dan integral dasar
+ET234101,Statistika dan Probabilitas,2,1,Teknologi Informasi,Mempelajari konsep statistika deskriptif dan teori probabilitas
+ET234201,Sistem Operasi,4,2,Teknologi Informasi,Mempelajari manajemen proses memori penjadwalan dan file system
+ET234204,Sistem Basis Data,4,2,Teknologi Informasi,Mempelajari perancangan dan implementasi basis data relasional
+ET234203,Struktur Data dan Pemrograman Berorientasi Objek,3,2,Teknologi Informasi,Mempelajari struktur data dan paradigma pemrograman berorientasi objek
+ET234202,Arsitektur Enterprise,3,2,Teknologi Informasi,Mempelajari konsep dan penerapan arsitektur sistem enterprise
+SM234201,Kalkulus 2,3,2,Teknologi Informasi,Mempelajari integral lanjut deret dan persamaan diferensial
+ET234301,Ethical Hacking dan Uji Keamanan Siber,4,3,Teknologi Informasi,Mempelajari teknik penetration testing dan uji keamanan sistem
+ET234303,Internet of Things,3,3,Teknologi Informasi,Mempelajari konsep dan implementasi perangkat IoT
+ET234302,Keamanan Jaringan Komputer,3,3,Teknologi Informasi,Mempelajari teknik pengamanan jaringan dan deteksi ancaman
+ET234306,Komunikasi Data dan Jaringan Komputer,4,3,Teknologi Informasi,Mempelajari protokol komunikasi data dan arsitektur jaringan komputer
+ET234305,Pemrograman Web,4,3,Teknologi Informasi,Mempelajari pengembangan aplikasi berbasis web front-end dan back-end
+ET234404,Big Data dan Data Lakehouse,3,4,Teknologi Informasi,Mempelajari konsep dan teknologi pengolahan data berskala besar
+ET234405,Kecerdasan Artifisial dan Machine Learning,4,4,Teknologi Informasi,Mempelajari algoritma kecerdasan buatan dan pembelajaran mesin
+ET234406,Integrasi Sistem,3,4,Teknologi Informasi,Mempelajari teknik integrasi berbagai sistem informasi dalam organisasi
+ET234401,Manajemen Insiden Keamanan Siber,3,4,Teknologi Informasi,Mempelajari penanganan dan manajemen insiden keamanan siber
+ET234402,Security Operations Center,3,4,Teknologi Informasi,Mempelajari operasional pusat pengamanan sistem informasi
+ET234403,Teknologi Komputasi Awan,4,4,Teknologi Informasi,Mempelajari konsep dan implementasi layanan cloud computing
+ET234502,Keamanan Web dan Aplikasi,3,5,Teknologi Informasi,Mempelajari teknik pengamanan aplikasi web dari berbagai ancaman
+ET234504,Teknologi Smartcity,4,5,Teknologi Informasi,Mempelajari penerapan teknologi informasi dalam ekosistem kota cerdas
+ET234506,Pemrograman Mobile,3,5,Teknologi Informasi,Mempelajari pengembangan aplikasi mobile untuk platform Android dan iOS

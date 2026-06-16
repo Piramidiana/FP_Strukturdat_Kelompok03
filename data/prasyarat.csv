@@ -1,0 +1,41 @@
+kode_mk,kode_prasyarat,keterangan
+ET234201,ET234102,Sistem Operasi membutuhkan pemahaman arsitektur komputer
+ET234203,ET234103,Struktur Data membutuhkan dasar algoritma dan pemrograman
+ET234301,ET234201,Ethical Hacking membutuhkan pemahaman sistem operasi
+ET234303,ET234103,IoT membutuhkan dasar pemrograman
+ET234303,ET234201,IoT membutuhkan pemahaman sistem operasi
+ET234302,ET234201,Keamanan Jaringan membutuhkan pemahaman sistem operasi
+ET234306,ET234201,Komunikasi Data membutuhkan pemahaman sistem operasi
+ET234305,ET234103,Pemrograman Web membutuhkan dasar pemrograman
+ET234404,ET234204,Big Data membutuhkan pemahaman basis data
+ET234405,ET234101,AI dan ML membutuhkan dasar statistika dan probabilitas
+ET234406,ET234305,Integrasi Sistem membutuhkan pemahaman pemrograman web
+ET234401,ET234302,Manajemen Insiden membutuhkan pemahaman keamanan jaringan
+ET234401,ET234301,Manajemen Insiden membutuhkan pemahaman ethical hacking
+ET234402,ET234302,SOC membutuhkan pemahaman keamanan jaringan
+ET234402,ET234301,SOC membutuhkan pemahaman ethical hacking
+ET234403,ET234306,Komputasi Awan membutuhkan pemahaman jaringan komputer
+ET234502,ET234305,Keamanan Web membutuhkan pemahaman pemrograman web
+ET234504,ET234303,Smartcity membutuhkan pemahaman IoT
+ET234506,ET234103,Pemrograman Mobile membutuhkan dasar pemrograman
+ET234203,ET234102,Struktur Data membutuhkan pemahaman arsitektur komputer
+ET234204,ET234203,Basis Data membutuhkan pemahaman struktur data
+ET234301,ET234302,Ethical Hacking membutuhkan pemahaman keamanan jaringan
+ET234302,ET234306,Keamanan Jaringan membutuhkan pemahaman komunikasi data
+ET234404,ET234405,Big Data berkaitan erat dengan teknik machine learning
+ET234405,ET234203,AI dan ML membutuhkan pemahaman struktur data
+ET234406,ET234204,Integrasi Sistem membutuhkan pemahaman basis data
+ET234401,ET234402,Manajemen Insiden berkaitan dengan operasional SOC
+ET234403,ET234201,Komputasi Awan membutuhkan pemahaman sistem operasi
+ET234502,ET234302,Keamanan Web membutuhkan pemahaman keamanan jaringan
+ET234504,ET234403,Smartcity membutuhkan pemahaman komputasi awan
+ET234202,ET234102,Arsitektur Enterprise membutuhkan pemahaman arsitektur komputer
+ET234305,ET234201,Pemrograman Web membutuhkan pemahaman sistem operasi
+ET234306,ET234102,Komunikasi Data membutuhkan pemahaman arsitektur komputer
+ET234404,ET234203,Big Data membutuhkan pemahaman struktur data
+ET234506,ET234305,Pemrograman Mobile berkaitan dengan pemrograman web modern
+ET234405,ET234101,AI dan ML diperkuat dengan pemahaman statistika
+ET234502,ET234401,Keamanan Web berkaitan dengan manajemen insiden
+ET234504,ET234406,Smartcity membutuhkan kemampuan integrasi sistem
+ET234403,ET234204,Komputasi Awan membutuhkan pemahaman basis data
+ET234406,ET234203,Integrasi Sistem membutuhkan pemahaman struktur data

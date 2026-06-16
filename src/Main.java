@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import model.Course;
 import system.CRUDManager;
+import system.CSVLoader;
 
 public class Main {
 
@@ -207,6 +208,22 @@ public class Main {
                                 " (" + course.getSks() + " SKS)");
                         }
                     }
+
+                    break;
+                }
+
+                case 9: {
+                    CSVLoader.loadCourses(
+                        "./data/matakuliah.csv",
+                        crud
+                    );
+
+                    CSVLoader.loadPrerequisites(
+                        "./data/prasyarat.csv",
+                        crud
+                    );
+
+                    System.out.println("Dataset loaded successfully.");
 
                     break;
                 }
