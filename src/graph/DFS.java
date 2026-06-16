@@ -7,7 +7,7 @@ import java.util.HashSet;
 import model.Course;
 
 public class DFS {
-    private void dfs(CourseGraph graph, Course current, Set<Course> visited, List<Course> traversal) {
+    private void dfs(CourseGraph graph, Course current, Set<Course> visited, List<Course> traversal, boolean reverse) {
         if (visited.contains(current)) {
             return;
         }
@@ -15,12 +15,14 @@ public class DFS {
         visited.add(current);
         traversal.add(current);
 
-        for (Course neighbor : graph.getNeighbors(current)) {
-            dfs(graph, neighbor, visited, traversal);
+        List<Course> neighbors = reverse ? graph.getPrerequisites(current) : graph.getNeighbors(current);
+
+        for (Course neighbor : neighbors) {
+            dfs(graph, neighbor, visited, traversal, reverse);
         }
     }
 
-    public List<Course> traverse(CourseGraph graph, Course startCourse) {
+    public List<Course> traverseForward(CourseGraph graph, Course startCourse) {
         List<Course> traversal = new ArrayList<>();
 
         if (graph == null || startCourse == null) {
@@ -29,7 +31,24 @@ public class DFS {
 
         Set<Course> visited = new HashSet<>();
         
-        dfs(graph, startCourse, visited, traversal);
+        dfs(graph, startCourse, visited, traversal, false);
+        traversal.remove(startCourse);
+
+        return traversal;
+    }
+
+    public List<Course> traverseBackwards(CourseGraph graph, Course startCourse) {
+        List<Course> traversal = new ArrayList<>();
+
+        if (graph == null || startCourse == null) {
+            return traversal;
+        }
+
+        Set<Course> visited = new HashSet<>();
+
+        dfs(graph, startCourse, visited, traversal, true);
+
+        traversal.remove(startCourse);
 
         return traversal;
     }

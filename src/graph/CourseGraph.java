@@ -67,6 +67,19 @@ public class CourseGraph {
         return adjacencyList.keySet();
     }
 
+    public List<Course> getPrerequisites(Course course) {
+
+        List<Course> prerequisites = new ArrayList<>();
+
+        for (Course vertex : adjacencyList.keySet()) {
+            if (adjacencyList.get(vertex).contains(course)) {
+                prerequisites.add(vertex);
+            }
+        }
+
+        return prerequisites;
+    }
+
     public void printGraph() {
         for (Course vertex : adjacencyList.keySet()) {
             System.out.println(vertex + " " + adjacencyList.get(vertex));

@@ -2,10 +2,12 @@ package system;
 
 import graph.CourseGraph;
 import graph.CycleDetector;
+import graph.DFS;
+import graph.TopologicalSorter;
 import model.Course;
 import tree.AVLTree;
 
-import java.util.Currency;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CRUDManager {
@@ -62,7 +64,7 @@ public class CRUDManager {
         Course prerequisite = tree.search(prerequisiteCode);
         Course course = tree.search(courseCode);
 
-        if (prerequisite == null || courseCode == null) {
+        if (prerequisite == null || course == null) {
             return false;
         }
 
@@ -75,5 +77,32 @@ public class CRUDManager {
         }
 
         return true;
+    }
+
+    public List<Course> getPrerequisiteChain(String code) {
+        Course course = tree.search(code);
+
+        if (course == null) {
+            return new ArrayList<>();
+        }
+
+        DFS dfs = new DFS();
+        return dfs.traverseBackwards(graph, course);
+    }
+
+    public List<Course> getDependentCourses(String code) {
+        Course course = tree.search(code);
+
+        if (course == null) {
+            return new ArrayList<>();
+        }
+
+        DFS dfs = new DFS();
+        return dfs.traverseForward(graph, course);
+    }
+
+    public List<Course> getStudyPlan() {
+        TopologicalSorter sorter = new TopologicalSorter();
+        return sorter.sort(graph);
     }
 }
