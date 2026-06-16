@@ -1,42 +1,84 @@
 package model;
 
+import java.util.Objects;
+
 public class Course {
-    // Kita buat 'kode' final agar tidak bisa diubah setelah di-set (seperti primary key)
-    private final String kode; 
-    private String nama;
+    private final String code;
+    private String name;
     private int sks;
     private int semester;
     private String major;
-    private String description;
+    private String desc;
 
-    // Constructor sesuai urutan yang diminta
-    public Course(String kode, String nama, int sks, int semester, String major, String description) {
-        this.kode = kode;
-        this.nama = nama;
+    public Course(String code, String name, int sks, int semester, String major, String desc) {
+        this.code = code;
+        this.name = name;
         this.sks = sks;
         this.semester = semester;
         this.major = major;
-        this.description = description;
+        this.desc = desc;
     }
 
-    // Getter untuk semua atribut
-    public String getKode() { return kode; }
-    public String getNama() { return nama; }
-    public int getSks() { return sks; }
-    public int getSemester() { return semester; }
-    public String getMajor() { return major; }
-    public String getDescription() { return description; }
+    public String getCode() {
+        return code;
+    }
 
-    // Setter untuk atribut yang boleh diubah
-    public void setNama(String nama) { this.nama = nama; }
-    public void setSks(int sks) { this.sks = sks; }
-    public void setSemester(int semester) { this.semester = semester; }
-    public void setMajor(String major) { this.major = major; }
-    public void setDescription(String description) { this.description = description; }
+    public String getName() {
+        return name;
+    }
 
-    // Override toString agar saat diprint muncul kodenya saja
+    public int getSks() {
+        return sks;
+    }
+
+    public int getSemester() {
+        return semester;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSks(int sks) {
+        this.sks = sks;
+    }
+
+    public void setSemester(int semester) {
+        this.semester = semester;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Course)) return false;
+
+        Course other = (Course) obj;
+        return Objects.equals(code, other.code);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(code);
+    }
+
     @Override
     public String toString() {
-        return kode;
+        return code;
     }
 }

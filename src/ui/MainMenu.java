@@ -6,7 +6,7 @@ import graph.TopologicalSorter;
 import model.Course;
 import system.CSVHandler;
 import system.CRUDManager;
-import tree.BPlusTree;
+import tree.AVLTree;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -27,7 +27,7 @@ public class MainMenu {
     private Map<String, List<String>> prerequisiteMap = new LinkedHashMap<>();
 
     // Modul milik B dan C.
-    private BPlusTree tree = new BPlusTree();
+    private AVLTree tree = new AVLTree();
     private CourseGraph graph = new CourseGraph();
 
     public void start() {
@@ -85,7 +85,7 @@ public class MainMenu {
     }
 
     private void rebuildTreeAndGraph() {
-        tree = new BPlusTree();
+        tree = new AVLTree();
         graph = new CourseGraph();
 
         // Semua course dimasukkan ke B+ Tree dan Graph.

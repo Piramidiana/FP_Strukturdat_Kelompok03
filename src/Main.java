@@ -1,5 +1,5 @@
 import model.Course;
-import tree.BPlusTree;
+import tree.AVLTree;
 import graph.CourseGraph;
 import util.DataLoader;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // 1. Inisialisasi Modul
-        BPlusTree tree = new BPlusTree();
+        AVLTree tree = new AVLTree();
         CourseGraph graph = new CourseGraph();
         String path = "../data/dataset.csv"; 
 

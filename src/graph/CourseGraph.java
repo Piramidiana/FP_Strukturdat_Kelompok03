@@ -5,6 +5,7 @@ import model.Course;
 import java.util.Map;
 import java.util.List;
 import java.util.Set;
+
 import java.util.HashMap;
 import java.util.ArrayList;
 
@@ -23,6 +24,18 @@ public class CourseGraph {
         adjacencyList.putIfAbsent(course, new ArrayList<>());
     }
 
+    public void removeVertex(Course course) {
+        if (course == null) {
+            return;
+        }
+
+        adjacencyList.remove(course);
+
+        for (List<Course> neighbors : adjacencyList.values()) {
+            neighbors.remove(course);
+        }
+    }
+
     public void addEdge(Course prerequisite, Course course) {
         if (prerequisite.equals(course)) {
             return;
@@ -35,6 +48,14 @@ public class CourseGraph {
         
         if (!neighbors.contains(course)) {
             neighbors.add(course);
+        }
+    }
+
+    public void removeEdge(Course prerequisite, Course course) {
+        List<Course> neighbors = adjacencyList.get(prerequisite);
+
+        if (neighbors != null) {
+            neighbors.remove(course);
         }
     }
 
